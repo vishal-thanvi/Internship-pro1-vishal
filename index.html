@@ -26,7 +26,7 @@
 background: #3d3d3d;
 color:#ffffff
   }
-  .expertise-box {
+  .expertise-box,.expertise-box1 {
     margin-bottom: 20px;
   }
   label,h2
@@ -43,11 +43,7 @@ color:#ffffff
     padding-top: 34px;
     background: rgb(255, 255, 255);
 }
-@media (max-width: 576px) {
-      .dropdown-toggle {
-        width: 100%;
-      }
-    }
+
 .nav-item:hover
 {
 background-color: rgb(82, 82, 82);
@@ -56,6 +52,26 @@ color: #ffffff;
 h6
 {
   text-align: center;
+}
+@media (max-width: 767px) {
+#servheadfont
+  {
+    font-size: 35px;
+  }
+  .dropdown-toggle
+  {
+    width: 268%;
+    margin-left: -61px;
+  }
+  .float-end
+  {
+    margin-top: 12px;
+  }
+  .form
+  {
+    margin-left: 0px;
+    border-radius: 23px;
+  }
 }
 </style>
 <title>Document</title>
@@ -93,14 +109,14 @@ h6
           </style>
           
           <div class="image-with-border">
-            <img src="image/join us.png" class="img-fluid w-100" alt="Product Picture">
+            <img src="../freehostdigital/image/join us.png" class="img-fluid w-100" alt="Product Picture">
           </div>
     <!--services section-->
     <div class="service-section">
           <div class="container mt-5">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h3 style="color:rgb(255, 160, 18);font-size: 66px;font-family: -webkit-body;"><b>Our Services</b></h3>
+                <h3 style="color:rgb(255, 160, 18);font-size: 66px;font-family: -webkit-body;" id="servheadfont"><b>Our Product/services</b></h3>
                 <div class="container mt-5">
                     <div class="row">
                       <div class="col-md-12">
@@ -114,7 +130,7 @@ h6
                             </button>
                           </div>
                           <div class="collapse mt-3" id="expertise1">
-                            <img src="image/servicepic1.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <img src="../freehostdigital/image/servicepic1.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
                             <p style="font-size: 20px;">
                                 Our expertise lies in crafting engaging social media campaigns that connect with your target audience, 
                                 drive brand awareness, and boost customer engagement.
@@ -131,7 +147,7 @@ h6
                             </button>
                           </div>
                           <div class="collapse mt-3" id="expertise2">
-                            <img src="image/servicepic2.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <img src="../freehostdigital/image/servicepic2.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
                             <p>
                               Our specialization in SEO involves optimizing your website to rank higher in search engine results, driving organic traffic and increasing your online visibility.
                             </p>
@@ -147,7 +163,7 @@ h6
                             </button>
                           </div>
                           <div class="collapse mt-3" id="expertise3">
-                            <img src="image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
                             <p>
                             With our expertise in content marketing,
                             we create valuable and relevant content 
@@ -166,7 +182,7 @@ h6
                             </button>
                           </div>
                           <div class="collapse mt-3" id="expertise4">
-                            <img src="image/servicepic4.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <img src="../freehostdigital/image/servicepic4.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
                             <p>
                               Our specialization in e-commerce marketing involves driving online sales, optimizing product listings, and implementing strategies to enhance user experience and conversion rates.
                             </p>
@@ -179,6 +195,203 @@ h6
             </div>
           </div>
         </div>
+
+<!---BENIFITS-->
+<div class="service-section">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 style="color:rgb(255, 160, 18);font-size: 66px;font-family: -webkit-body;"><b>Product/services Benifits</b></h3>
+        <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise10" onclick="toggleDescriptions('expertise10')">
+                      1. Global reach
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise1">
+                    <img src="../freehostdigital/image/servicepic1.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p style="font-size: 20px;">
+                        Our expertise lies in crafting engaging social media campaigns that connect with your target audience, 
+                        drive brand awareness, and boost customer engagement.
+                    </p>
+                </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise11" onclick="toggleDescriptions('expertise11')">
+                      2. Cost efficiency
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise2">
+                    <img src="../freehostdigital/image/servicepic2.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      Our specialization in SEO involves optimizing your website to rank higher in search engine results, driving organic traffic and increasing your online visibility.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise12" onclick="toggleDescriptions('expertise12')">
+                      3. Measurable results
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise3">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                    With our expertise in content marketing,
+                    we create valuable and relevant content 
+                    that resonates with your audience,
+                    drives engagement, and establishes thought leadership.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise13" onclick="toggleDescriptions('expertise13')">
+                      4. Effective targeting
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise13">
+                    <img src="image/servicepic4.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      With traditional marketing, you have little control over who sees your content. Even if you pay for a targeted ad in a niche magazine, you can’t guarantee that everyone reading that magazine is your ideal customer.
+
+However, digital marketing allows you to pinpoint the best audience for your messages using online audience and targeting information. You can also collect data from your digital campaigns to see which content works best for certain types of customers. If you’re still learning about your customers’ preferences, these insights can help you refine your campaigns over time.</p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise14" onclick="toggleDescriptions('expertise14')">
+                      5. Increased engagement
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise14">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      Traditional marketing methods only allow for one-way interactions. Your business can communicate a message to your audience — but there’s no clear pathway for the audience to respond or take action directly. This puts a barrier between your brand and the people you’re trying to reach, which can reduce engagement.
+
+                      Digital marketing presents you with the opportunity to have real conversations with your customers. Whether through email, SMS, social media, or blog comments, you can get feedback from your customers every step of the way. This gives you more opportunities to delight customers, answer questions, and fine-tune your campaigns based on their input. It doesn’t hurt that these conversations also provide you with more customer touchpoints, which can increase conversions and sales.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise15" onclick="toggleDescriptions('expertise15')">
+                      6. Flexibility
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise15">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      Digital marketing gives you the flexibility to choose from different channels and strategies. It’s also flexible enough that you can adjust your approach over time as you learn more about what works for your audience and business.
+
+                      Different types of digital marketing strategies
+                      There are several types of digital marketing strategies to choose from, including:
+                      
+                      Search engine marketing. Search engine marketing (SEM) includes paid search efforts, including pay-per-click (PPC) advertising. With SEM, you pay to show ads to relevant audiences searching for popular terms on search engines, and these ads drive traffic to a webpage of your choice.
+                      Social paid ads. Paid ads on leading social platforms — Facebook, Instagram, Twitter, LinkedIn, and even TikTok — help businesses put themselves in front of millions of potential customers. Many social platforms put a premium on paid ads, prioritizing them above organic content.
+                      Video marketing. Video content is a great way to pack a lot of information into a short visual format, which can help you make a bigger impression on your audience. Sharing videos on YouTube or TikTok allows you to target specific people with your content, and it’s cheaper than paying for a traditional TV spot.
+                      Forum engagement. Brands can monitor common questions on forums like Quora or industry boards and provide helpful answers to users’ questions. This positions you as an expert while subtly promoting your brand.
+                      Social media marketing. Find out which social channels your customers use and create profiles on those platforms. Invest in regularly sharing quality content, replying to user comments, and building relationships with your target audience as you engage with them online.
+                      Email marketing. Email is a great way to send regular updates to customers and potential customers who are subscribed to your list. With an email marketing platform, it’s easy to automate messages to send at a regular cadence while creating granular, personalized experiences based on audience behavior or demographics.
+                      Local search. This is a popular tactic for brick-and-mortar businesses. Local search allows you to optimize your website and business listings to appeal to local customers looking for products and services near them.
+                      Remarketing. This digital marketing strategy targets past leads or customers and encourages them to re-engage with your brand. Paid social, display ads, email, and SMS are all popular remarketing channels.
+                      Influencer marketing. Influencer marketing is popular for both B2C and B2B organizations. Businesses essentially rent an influencer’s clout to promote themselves to an audience that might otherwise ignore branded messaging. You can pay content creators to promote your products or services to their followers on various digital channels, including social media, personal websites, and podcasts.
+                      Once you choose a handful of online marketing strategies, it’s time to select the types of content you’ll create. Content can take various forms, including:
+                      
+                      Blogs. Post blogs either on your website or as a guest contributor on other sites. This boosts authority and provides expert guidance to your audience, which can increase brand trust.
+                      Podcasts. There are over 464 million podcast listeners in the world. More people are embracing audio-first content, so podcasting is a great way to reach more people.
+                      Emails. Email marketing is an easy way to stay in contact with your most engaged and loyal followers. Send newsletters, coupons, exclusive content, or welcome messages to stay in touch with your customers regularly.
+                      Ebooks. Ebooks are more common in B2B marketing. In fact, this is the most-requested form of content for B2B marketers. With an eBook, you create in-depth content about helpful industry trends, tips, or other helpful information. Many businesses gate eBook content as a way to add more subscribers to their email lists.
+                      Visual content. Visual content, like infographics or memes, helps your brand stand out on social media. It can also help you rank well in image search results.
+                      Guides. Guides are more common in B2B marketing because business buyers need to back up their purchasing decisions with data and evidence. This type of content is highly educational and quantitative, so it’s ideal for building industry authority.
+                      Quizzes. Quizzes are an often overlooked marketing strategy, but they can generate a lot of attention online. Create quizzes to help shoppers pick the best products, or create a fun personality quiz to engage with your social media followers.
+                      Social media posts. Posting on Instagram, Facebook, Twitter, LinkedIn, and countless other social media platforms puts your brand in front of hundreds of potential customers.
+                      Webinars. Webinars are informational online events that are more common in B2B campaigns because they give brands an opportunity to continue conversations during the long B2B buying process. Webinars might touch on industry trends, how-tos, expert interviews, or product demos.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise16" onclick="toggleDescriptions('expertise16')">
+                      7. Improved conversion rate
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise16">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      When a customer converts, they take a desired action. That might be subscribing to your email newsletter or making a purchase. Your conversion rate measures the percentage of customers who take that desired action. Generally speaking, the higher your conversion rates, the more successful your marketing efforts.
+
+                      Traditional marketing methods have just a 1.7% lead-to-close rate, which means fewer than 2% of all leads become customers. However, digital marketing has a 9.9% lead-to-close rate, which is nearly six times higher than traditional marketing. If you want to convert more prospects into customers, digital marketing is the way to go.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise17" onclick="toggleDescriptions('expertise18')">
+                      8. Social currency
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise18">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      Social currency is what happens when content passes from user to user, eventually becoming viral and making a name for your brand. In the past, social currency happened largely through word-of-mouth recommendations. Today, thanks to the power of digital strategies like social media marketing, your business can build social currency by creating content that’s highly relevant, entertaining, and timely. Social currency keeps the conversation going long after your brand’s posts go live and can keep your business top of mind with consumers.
+                    </p>
+                  </div>
+                </div>
+                <div class="expertise-box1">
+                  <div class="btn-group">
+                    <button type="button" id="benifit-button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise19" onclick="toggleDescriptions('expertise19')">
+                      9. Greater ROI
+                      <span class="ms-2">
+                        <i class="bi bi-caret-down"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="collapse mt-3" id="expertise19">
+                    <img src="../freehostdigital/image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <p>
+                      Digital marketing gives businesses more value for their investment — and it’s easier to prove ROI because you can easily attribute sales and conversions to specific campaigns and touchpoints. In an age where marketers increasingly need to do more with fewer resources, digital channels empower businesses to market themselves in the most cost-effective way.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+</div>
     <!--customer testimonials-->
     <div class="container-fluid" style="background-color: #000000; padding-bottom: 30px;">
     <div class="p-3 mb-2 bg-transparent text-dark">
@@ -189,11 +402,11 @@ h6
       </div>
       <div class="row">
           <div class="col-md-6">
-              <img src="image/testimonial1.png" class="float-start" style="max-width: 50%;max-width: 40%;
+              <img src="../freehostdigital/image/testimonial1.png" class="float-start" style="max-width: 50%;max-width: 40%;
               margin-left: 133px; border-radius: 10px" alt="Testimonial 1">
           </div>
           <div class="col-md-6">
-              <img src="image/testimonial2.png" class="float-end" style="max-width: 50%;max-width: 40%;
+              <img src="../freehostdigital/image/testimonial2.png" class="float-end" style="max-width: 50%;max-width: 40%;
               margin-right: 133px; border-radius: 10px;" alt="Testimonial 2">
           </div>
       </div>
@@ -205,8 +418,8 @@ h6
     <!--contact information-->
     <div class="container mt-5">
       <div class="row">
-          <!-- Left Section -->
-          <div class="col-md-6" style="background-color: rgb(0, 0, 0); margin-left: -50px; border-radius: 5px;margin-left:25%;padding-bottom:20px ;">
+
+          <div class="col-md-6" class="form" style="background-color: rgb(0, 0, 0); margin-left:auto; border-radius: 5px;padding-bottom:20px ;">
               <div class="container mt-5">
                   <h2 class="text-center">Fill the form get call back soon</h2>
                   <form>
@@ -247,7 +460,7 @@ h6
   <h6 type="tel:6376318678">Contact : 6376318678</h6>
   <h6 type="email">Email : vishalthanviphalodi@gmail.com</h6>
   <footer class="text-center">
-    <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+    <p>&copy; 2023 Vishal Thanvi All Rights Reserved.</p>
   </footer>
 </div>
 </div>
